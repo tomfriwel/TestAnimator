@@ -15,6 +15,15 @@
 		CF353DCB1E1357D80094632B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF353DC91E1357D80094632B /* LaunchScreen.storyboard */; };
 		CF353DD61E1357D80094632B /* TestAnimatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353DD51E1357D80094632B /* TestAnimatorTests.m */; };
 		CF353DE11E1357D80094632B /* TestAnimatorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353DE01E1357D80094632B /* TestAnimatorUITests.m */; };
+		CF353DF01E13584E0094632B /* PopAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353DEF1E13584E0094632B /* PopAnimator.m */; };
+		CF353DF31E1359690094632B /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353DF21E1359690094632B /* PopViewController.m */; };
+		CF353DFF1E13A4530094632B /* PopPhotoViewControllerTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353DFE1E13A4530094632B /* PopPhotoViewControllerTransition.m */; };
+		CF353E021E13AAC70094632B /* UIView+Snapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E011E13AAC70094632B /* UIView+Snapshot.m */; };
+		CF353E051E13BDA40094632B /* PopPhotoViewControllerInteractive.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E041E13BDA40094632B /* PopPhotoViewControllerInteractive.m */; };
+		CF353E081E13C2360094632B /* PhotosPopTransitionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E071E13C2360094632B /* PhotosPopTransitionManager.m */; };
+		CF353E101E14A9D90094632B /* CustomInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E0F1E14A9D90094632B /* CustomInteractionController.m */; };
+		CF353E131E14AAEE0094632B /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E121E14AAEE0094632B /* CustomNavigationAnimationController.m */; };
+		CF44E1331E657D76001C4BA9 /* TestPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +60,24 @@
 		CF353DDC1E1357D80094632B /* TestAnimatorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAnimatorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF353DE01E1357D80094632B /* TestAnimatorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAnimatorUITests.m; sourceTree = "<group>"; };
 		CF353DE21E1357D80094632B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF353DEE1E13584E0094632B /* PopAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopAnimator.h; sourceTree = "<group>"; };
+		CF353DEF1E13584E0094632B /* PopAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopAnimator.m; sourceTree = "<group>"; };
+		CF353DF11E1359690094632B /* PopViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		CF353DF21E1359690094632B /* PopViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		CF353DFD1E13A4530094632B /* PopPhotoViewControllerTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPhotoViewControllerTransition.h; sourceTree = "<group>"; };
+		CF353DFE1E13A4530094632B /* PopPhotoViewControllerTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPhotoViewControllerTransition.m; sourceTree = "<group>"; };
+		CF353E001E13AAC70094632B /* UIView+Snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Snapshot.h"; sourceTree = "<group>"; };
+		CF353E011E13AAC70094632B /* UIView+Snapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Snapshot.m"; sourceTree = "<group>"; };
+		CF353E031E13BDA40094632B /* PopPhotoViewControllerInteractive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopPhotoViewControllerInteractive.h; sourceTree = "<group>"; };
+		CF353E041E13BDA40094632B /* PopPhotoViewControllerInteractive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopPhotoViewControllerInteractive.m; sourceTree = "<group>"; };
+		CF353E061E13C2360094632B /* PhotosPopTransitionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosPopTransitionManager.h; sourceTree = "<group>"; };
+		CF353E071E13C2360094632B /* PhotosPopTransitionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosPopTransitionManager.m; sourceTree = "<group>"; };
+		CF353E0E1E14A9D90094632B /* CustomInteractionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomInteractionController.h; sourceTree = "<group>"; };
+		CF353E0F1E14A9D90094632B /* CustomInteractionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomInteractionController.m; sourceTree = "<group>"; };
+		CF353E111E14AAEE0094632B /* CustomNavigationAnimationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomNavigationAnimationController.h; sourceTree = "<group>"; };
+		CF353E121E14AAEE0094632B /* CustomNavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationAnimationController.m; sourceTree = "<group>"; };
+		CF44E1311E657D76001C4BA9 /* TestPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPresentationViewController.h; sourceTree = "<group>"; };
+		CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPresentationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +128,9 @@
 		CF353DBA1E1357D80094632B /* TestAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				CF44E1341E657D7B001C4BA9 /* TestPresentation */,
+				CF353DEE1E13584E0094632B /* PopAnimator.h */,
+				CF353DEF1E13584E0094632B /* PopAnimator.m */,
 				CF353DBE1E1357D80094632B /* AppDelegate.h */,
 				CF353DBF1E1357D80094632B /* AppDelegate.m */,
 				CF353DC11E1357D80094632B /* ViewController.h */,
@@ -109,6 +139,20 @@
 				CF353DC71E1357D80094632B /* Assets.xcassets */,
 				CF353DC91E1357D80094632B /* LaunchScreen.storyboard */,
 				CF353DCC1E1357D80094632B /* Info.plist */,
+				CF353E0E1E14A9D90094632B /* CustomInteractionController.h */,
+				CF353E0F1E14A9D90094632B /* CustomInteractionController.m */,
+				CF353E111E14AAEE0094632B /* CustomNavigationAnimationController.h */,
+				CF353E121E14AAEE0094632B /* CustomNavigationAnimationController.m */,
+				CF353DF11E1359690094632B /* PopViewController.h */,
+				CF353DF21E1359690094632B /* PopViewController.m */,
+				CF353DFD1E13A4530094632B /* PopPhotoViewControllerTransition.h */,
+				CF353DFE1E13A4530094632B /* PopPhotoViewControllerTransition.m */,
+				CF353E001E13AAC70094632B /* UIView+Snapshot.h */,
+				CF353E011E13AAC70094632B /* UIView+Snapshot.m */,
+				CF353E031E13BDA40094632B /* PopPhotoViewControllerInteractive.h */,
+				CF353E041E13BDA40094632B /* PopPhotoViewControllerInteractive.m */,
+				CF353E061E13C2360094632B /* PhotosPopTransitionManager.h */,
+				CF353E071E13C2360094632B /* PhotosPopTransitionManager.m */,
 				CF353DBB1E1357D80094632B /* Supporting Files */,
 			);
 			path = TestAnimator;
@@ -138,6 +182,15 @@
 				CF353DE21E1357D80094632B /* Info.plist */,
 			);
 			path = TestAnimatorUITests;
+			sourceTree = "<group>";
+		};
+		CF44E1341E657D7B001C4BA9 /* TestPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				CF44E1311E657D76001C4BA9 /* TestPresentationViewController.h */,
+				CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */,
+			);
+			name = TestPresentation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -207,7 +260,8 @@
 				TargetAttributes = {
 					CF353DB71E1357D80094632B = {
 						CreatedOnToolsVersion = 8.2;
-						DevelopmentTeam = T5EW9858SB;
+						DevelopmentTeam = 8SJXRJ78CW;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 					CF353DD01E1357D80094632B = {
@@ -276,8 +330,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CF44E1331E657D76001C4BA9 /* TestPresentationViewController.m in Sources */,
+				CF353E021E13AAC70094632B /* UIView+Snapshot.m in Sources */,
+				CF353E081E13C2360094632B /* PhotosPopTransitionManager.m in Sources */,
 				CF353DC31E1357D80094632B /* ViewController.m in Sources */,
+				CF353E101E14A9D90094632B /* CustomInteractionController.m in Sources */,
+				CF353DF31E1359690094632B /* PopViewController.m in Sources */,
 				CF353DC01E1357D80094632B /* AppDelegate.m in Sources */,
+				CF353E051E13BDA40094632B /* PopPhotoViewControllerInteractive.m in Sources */,
+				CF353E131E14AAEE0094632B /* CustomNavigationAnimationController.m in Sources */,
+				CF353DF01E13584E0094632B /* PopAnimator.m in Sources */,
+				CF353DFF1E13A4530094632B /* PopPhotoViewControllerTransition.m in Sources */,
 				CF353DBD1E1357D80094632B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -425,11 +488,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = TestAnimator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.com.TestAnimator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestAnimator/TestAnimator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -437,11 +504,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = T5EW9858SB;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = 8SJXRJ78CW;
 				INFOPLIST_FILE = TestAnimator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = tomfriwel.com.TestAnimator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestAnimator/TestAnimator-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -514,6 +584,7 @@
 				CF353DE71E1357D80094632B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF353DE81E1357D80094632B /* Build configuration list for PBXNativeTarget "TestAnimatorTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +593,7 @@
 				CF353DEA1E1357D80094632B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF353DEB1E1357D80094632B /* Build configuration list for PBXNativeTarget "TestAnimatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +602,7 @@
 				CF353DED1E1357D80094632B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
