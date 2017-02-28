@@ -7,8 +7,10 @@
 //
 
 #import "TestPresentationViewController.h"
+#import "PresentVC.h"
+#import "PresentationController.h"
 
-@interface TestPresentationViewController ()
+@interface TestPresentationViewController () <UIViewControllerTransitioningDelegate>
 
 @end
 
@@ -19,19 +21,20 @@
     // Do any additional setup after loading the view.
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (IBAction)presentView:(id)sender {
+    PresentVC *presentVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PresentVC"];//[[PresentVC alloc] init];
+    presentVC.view.backgroundColor = [UIColor grayColor];
+    // 设置 动画样式
+    presentVC.modalPresentationStyle = UIModalPresentationCustom;
+    //presentVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    // 此对象要实现 UIViewControllerTransitioningDelegate 协议
+    presentVC.transitioningDelegate = self;
+    [self presentViewController:presentVC animated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source{
+    
+    return [[PresentationController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
 }
-*/
 
 @end

@@ -24,6 +24,8 @@
 		CF353E101E14A9D90094632B /* CustomInteractionController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E0F1E14A9D90094632B /* CustomInteractionController.m */; };
 		CF353E131E14AAEE0094632B /* CustomNavigationAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF353E121E14AAEE0094632B /* CustomNavigationAnimationController.m */; };
 		CF44E1331E657D76001C4BA9 /* TestPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */; };
+		CF44E13A1E6596B5001C4BA9 /* PresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1391E6596B5001C4BA9 /* PresentationController.m */; };
+		CF44E13D1E6598B2001C4BA9 /* PresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E13C1E6598B2001C4BA9 /* PresentVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +80,10 @@
 		CF353E121E14AAEE0094632B /* CustomNavigationAnimationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomNavigationAnimationController.m; sourceTree = "<group>"; };
 		CF44E1311E657D76001C4BA9 /* TestPresentationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPresentationViewController.h; sourceTree = "<group>"; };
 		CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPresentationViewController.m; sourceTree = "<group>"; };
+		CF44E1381E6596B5001C4BA9 /* PresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentationController.h; sourceTree = "<group>"; };
+		CF44E1391E6596B5001C4BA9 /* PresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationController.m; sourceTree = "<group>"; };
+		CF44E13B1E6598B2001C4BA9 /* PresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentVC.h; sourceTree = "<group>"; };
+		CF44E13C1E6598B2001C4BA9 /* PresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +195,10 @@
 			children = (
 				CF44E1311E657D76001C4BA9 /* TestPresentationViewController.h */,
 				CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */,
+				CF44E1381E6596B5001C4BA9 /* PresentationController.h */,
+				CF44E1391E6596B5001C4BA9 /* PresentationController.m */,
+				CF44E13B1E6598B2001C4BA9 /* PresentVC.h */,
+				CF44E13C1E6598B2001C4BA9 /* PresentVC.m */,
 			);
 			name = TestPresentation;
 			sourceTree = "<group>";
@@ -336,11 +346,13 @@
 				CF353DC31E1357D80094632B /* ViewController.m in Sources */,
 				CF353E101E14A9D90094632B /* CustomInteractionController.m in Sources */,
 				CF353DF31E1359690094632B /* PopViewController.m in Sources */,
+				CF44E13D1E6598B2001C4BA9 /* PresentVC.m in Sources */,
 				CF353DC01E1357D80094632B /* AppDelegate.m in Sources */,
 				CF353E051E13BDA40094632B /* PopPhotoViewControllerInteractive.m in Sources */,
 				CF353E131E14AAEE0094632B /* CustomNavigationAnimationController.m in Sources */,
 				CF353DF01E13584E0094632B /* PopAnimator.m in Sources */,
 				CF353DFF1E13A4530094632B /* PopPhotoViewControllerTransition.m in Sources */,
+				CF44E13A1E6596B5001C4BA9 /* PresentationController.m in Sources */,
 				CF353DBD1E1357D80094632B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
