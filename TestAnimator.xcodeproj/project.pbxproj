@@ -26,6 +26,8 @@
 		CF44E1331E657D76001C4BA9 /* TestPresentationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1321E657D76001C4BA9 /* TestPresentationViewController.m */; };
 		CF44E13A1E6596B5001C4BA9 /* PresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1391E6596B5001C4BA9 /* PresentationController.m */; };
 		CF44E13D1E6598B2001C4BA9 /* PresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E13C1E6598B2001C4BA9 /* PresentVC.m */; };
+		CF44E1401E65A415001C4BA9 /* RightSwipeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E13F1E65A415001C4BA9 /* RightSwipeTransition.m */; };
+		CF44E1441E666C3E001C4BA9 /* CatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1431E666C3E001C4BA9 /* CatalogTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +86,10 @@
 		CF44E1391E6596B5001C4BA9 /* PresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentationController.m; sourceTree = "<group>"; };
 		CF44E13B1E6598B2001C4BA9 /* PresentVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentVC.h; sourceTree = "<group>"; };
 		CF44E13C1E6598B2001C4BA9 /* PresentVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentVC.m; sourceTree = "<group>"; };
+		CF44E13E1E65A415001C4BA9 /* RightSwipeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RightSwipeTransition.h; sourceTree = "<group>"; };
+		CF44E13F1E65A415001C4BA9 /* RightSwipeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSwipeTransition.m; sourceTree = "<group>"; };
+		CF44E1421E666C3E001C4BA9 /* CatalogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogTableViewController.h; sourceTree = "<group>"; };
+		CF44E1431E666C3E001C4BA9 /* CatalogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +140,9 @@
 		CF353DBA1E1357D80094632B /* TestAnimator */ = {
 			isa = PBXGroup;
 			children = (
+				CF44E1421E666C3E001C4BA9 /* CatalogTableViewController.h */,
+				CF44E1431E666C3E001C4BA9 /* CatalogTableViewController.m */,
+				CF44E1411E666BFF001C4BA9 /* TestTransition */,
 				CF44E1341E657D7B001C4BA9 /* TestPresentation */,
 				CF353DEE1E13584E0094632B /* PopAnimator.h */,
 				CF353DEF1E13584E0094632B /* PopAnimator.m */,
@@ -199,8 +208,17 @@
 				CF44E1391E6596B5001C4BA9 /* PresentationController.m */,
 				CF44E13B1E6598B2001C4BA9 /* PresentVC.h */,
 				CF44E13C1E6598B2001C4BA9 /* PresentVC.m */,
+				CF44E13E1E65A415001C4BA9 /* RightSwipeTransition.h */,
+				CF44E13F1E65A415001C4BA9 /* RightSwipeTransition.m */,
 			);
 			name = TestPresentation;
+			sourceTree = "<group>";
+		};
+		CF44E1411E666BFF001C4BA9 /* TestTransition */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TestTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -346,8 +364,10 @@
 				CF353DC31E1357D80094632B /* ViewController.m in Sources */,
 				CF353E101E14A9D90094632B /* CustomInteractionController.m in Sources */,
 				CF353DF31E1359690094632B /* PopViewController.m in Sources */,
+				CF44E1401E65A415001C4BA9 /* RightSwipeTransition.m in Sources */,
 				CF44E13D1E6598B2001C4BA9 /* PresentVC.m in Sources */,
 				CF353DC01E1357D80094632B /* AppDelegate.m in Sources */,
+				CF44E1441E666C3E001C4BA9 /* CatalogTableViewController.m in Sources */,
 				CF353E051E13BDA40094632B /* PopPhotoViewControllerInteractive.m in Sources */,
 				CF353E131E14AAEE0094632B /* CustomNavigationAnimationController.m in Sources */,
 				CF353DF01E13584E0094632B /* PopAnimator.m in Sources */,

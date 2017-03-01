@@ -39,6 +39,9 @@
     [self.interaction attachToViewController:self forEdge:UIRectEdgeRight];
 //    [self.view addGestureRecognizer:[[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePanGesture:)]];
 }
+- (IBAction)back:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 - (IBAction)testAction:(id)sender {
     PopViewController *vc = [[PopViewController alloc] init];

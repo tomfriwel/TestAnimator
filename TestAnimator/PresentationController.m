@@ -24,7 +24,18 @@
     _visualView.alpha = 0.4;
     _visualView.backgroundColor = [UIColor blackColor];
     
+    [_visualView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dimmingViewTapped:)]];
+    
     [self.containerView addSubview:_visualView];
+    
+    // Get the transition coordinator for the presentation so we can
+    // fade in the dimmingView alongside the presentation animation.
+    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.presentingViewController.transitionCoordinator;
+    
+    self.visualView.alpha = 0.f;
+    [transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        self.visualView.alpha = 0.5f;
+    } completion:NULL];
 }
 
 -(void)presentationTransitionDidEnd:(BOOL)completed {
@@ -35,7 +46,13 @@
 }
 
 -(void)dismissalTransitionWillBegin {
-    _visualView.alpha = 0.0;
+    
+    id<UIViewControllerTransitionCoordinator> transitionCoordinator = self.presentingViewController.transitionCoordinator;
+    
+    [transitionCoordinator animateAlongsideTransition:^(id<UIViewControllerTransitionCoordinatorContext> context) {
+        self.visualView.alpha = 0.f;
+    } completion:NULL];
+    
 }
 
 - (void)dismissalTransitionDidEnd:(BOOL)completed{
@@ -52,6 +69,12 @@
     self.presentedView.frame = CGRectMake(0, windowH - 300, windowW, 300);
     
     return self.presentedView.frame;
+}
+
+#pragma mark - action
+
+- (IBAction)dimmingViewTapped:(UITapGestureRecognizer*)sender {
+    [self.presentingViewController dismissViewControllerAnimated:YES completion:NULL];
 }
 
 @end
