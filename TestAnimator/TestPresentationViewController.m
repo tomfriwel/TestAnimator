@@ -37,7 +37,7 @@
 -(void)createVC {
     
     self.presentVC = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"PresentVC"];//[[PresentVC alloc] init];
-    self.presentVC.view.backgroundColor = [UIColor grayColor];
+    self.presentVC.view.backgroundColor = [UIColor whiteColor];
     // 设置 动画样式
     self.presentVC.modalPresentationStyle = UIModalPresentationCustom;
     //presentVC.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
@@ -65,6 +65,7 @@
     if (edgePan.state == UIGestureRecognizerStateBegan) {
         self.presentTransition.isPercentDriven = YES;
         self.percentDrivenTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+//        [self.navigationController pushViewController:self.presentVC animated:YES];
         [self presentViewController:self.presentVC animated:YES completion:nil];
 //        self.navigationController?.popViewControllerAnimated(true)
     } else if (edgePan.state == UIGestureRecognizerStateChanged) {

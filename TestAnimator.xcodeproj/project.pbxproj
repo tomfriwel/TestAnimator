@@ -142,7 +142,6 @@
 			children = (
 				CF44E1421E666C3E001C4BA9 /* CatalogTableViewController.h */,
 				CF44E1431E666C3E001C4BA9 /* CatalogTableViewController.m */,
-				CF44E1411E666BFF001C4BA9 /* TestTransition */,
 				CF44E1341E657D7B001C4BA9 /* TestPresentation */,
 				CF353DEE1E13584E0094632B /* PopAnimator.h */,
 				CF353DEF1E13584E0094632B /* PopAnimator.m */,
@@ -212,13 +211,6 @@
 				CF44E13F1E65A415001C4BA9 /* RightSwipeTransition.m */,
 			);
 			name = TestPresentation;
-			sourceTree = "<group>";
-		};
-		CF44E1411E666BFF001C4BA9 /* TestTransition */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = TestTransition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
