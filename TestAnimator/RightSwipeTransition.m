@@ -7,6 +7,7 @@
 //
 
 #import "RightSwipeTransition.h"
+#import "PresentationController.h"
 
 @interface RightSwipeTransition()
 
@@ -49,9 +50,8 @@
         CGRect startframe = CGRectOffset(finalframe, -finalframe.size.width, 0);
         toView.frame = startframe;
         
-        CGRect fromFinalFrame = CGRectOffset(fromView.frame, 200, 0);
-        CGAffineTransform fromViewTransform = CGAffineTransformMakeTranslation(220, 0);
-//        fromView.transform
+        CGRect fromFinalFrame = CGRectOffset(fromView.frame, PRESENTATION_W, 0);
+
         [containerView insertSubview:fromView atIndex:0];
         [containerView addSubview:toView];
         if (!self.isPercentDriven) {
@@ -59,9 +59,7 @@
                 //secondviewcontroller 滑上来
                 toView.frame = finalframe;
                 fromView.frame = fromFinalFrame;
-//                fromVC.view.transform = fromViewTransform;
             } completion:^(BOOL finished) {
-//                fromVC.view = fromView;
                 [transitionContext completeTransition: ![transitionContext transitionWasCancelled]];
             }];
         }
@@ -96,9 +94,11 @@
         CGRect finalframe = [transitionContext finalFrameForViewController:fromVC];
         finalframe = CGRectOffset(finalframe, -finalframe.size.width, 0);
         
-        CGRect toFinalFrame = CGRectOffset(toView.frame, -200, 0);
+        CGRect toFinalFrame = CGRectOffset(toView.frame, -PRESENTATION_W, 0);
         
 //        [containerView addSubview:fromView];
+        if (!self.isPercentDriven) {
+            
         [UIView animateWithDuration:[self transitionDuration:transitionContext] delay:0.0f usingSpringWithDamping:1.0f initialSpringVelocity:0.0 options:UIViewAnimationOptionAllowUserInteraction | UIViewAnimationOptionCurveLinear animations:^{
             //secondviewcontroller 滑上来
             fromView.frame = finalframe;
@@ -106,6 +106,16 @@
         } completion:^(BOOL finished) {
             [transitionContext completeTransition: ![transitionContext transitionWasCancelled]];
         }];
+        }
+        else {
+            [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
+                
+                fromView.frame = finalframe;
+                toView.frame = toFinalFrame;
+            } completion:^(BOOL finished) {
+                [transitionContext completeTransition: ![transitionContext transitionWasCancelled]];
+            }];
+        }
     }
 }
 

@@ -67,7 +67,7 @@
     CGFloat windowW = [UIScreen mainScreen].bounds.size.width;
     
 //    self.presentedView.frame = CGRectMake(0, windowH - 300, windowW, 300);
-    self.presentedView.frame = CGRectMake(0, 0, 200, windowH);
+    self.presentedView.frame = CGRectMake(0, 0, PRESENTATION_W, windowH);
     
     return self.presentedView.frame;
 }

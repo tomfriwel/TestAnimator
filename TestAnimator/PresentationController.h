@@ -10,6 +10,8 @@
 
 #import <UIKit/UIKit.h>
 
+#define PRESENTATION_W 200.0f
+
 @interface PresentationController : UIPresentationController
 
 @end
