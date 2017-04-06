@@ -28,6 +28,8 @@
 		CF44E13D1E6598B2001C4BA9 /* PresentVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E13C1E6598B2001C4BA9 /* PresentVC.m */; };
 		CF44E1401E65A415001C4BA9 /* RightSwipeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E13F1E65A415001C4BA9 /* RightSwipeTransition.m */; };
 		CF44E1441E666C3E001C4BA9 /* CatalogTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF44E1431E666C3E001C4BA9 /* CatalogTableViewController.m */; };
+		CF6009421E963AC500674099 /* PushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009411E963AC500674099 /* PushedViewController.m */; };
+		CF6009451E963BDE00674099 /* TestPushedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF6009441E963BDE00674099 /* TestPushedViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +92,10 @@
 		CF44E13F1E65A415001C4BA9 /* RightSwipeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RightSwipeTransition.m; sourceTree = "<group>"; };
 		CF44E1421E666C3E001C4BA9 /* CatalogTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CatalogTableViewController.h; sourceTree = "<group>"; };
 		CF44E1431E666C3E001C4BA9 /* CatalogTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CatalogTableViewController.m; sourceTree = "<group>"; };
+		CF6009401E963AC500674099 /* PushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushedViewController.h; sourceTree = "<group>"; };
+		CF6009411E963AC500674099 /* PushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushedViewController.m; sourceTree = "<group>"; };
+		CF6009431E963BDE00674099 /* TestPushedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestPushedViewController.h; sourceTree = "<group>"; };
+		CF6009441E963BDE00674099 /* TestPushedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestPushedViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +155,10 @@
 				CF353DBF1E1357D80094632B /* AppDelegate.m */,
 				CF353DC11E1357D80094632B /* ViewController.h */,
 				CF353DC21E1357D80094632B /* ViewController.m */,
+				CF6009401E963AC500674099 /* PushedViewController.h */,
+				CF6009411E963AC500674099 /* PushedViewController.m */,
+				CF6009431E963BDE00674099 /* TestPushedViewController.h */,
+				CF6009441E963BDE00674099 /* TestPushedViewController.m */,
 				CF353DC41E1357D80094632B /* Main.storyboard */,
 				CF353DC71E1357D80094632B /* Assets.xcassets */,
 				CF353DC91E1357D80094632B /* LaunchScreen.storyboard */,
@@ -359,11 +369,13 @@
 				CF44E1401E65A415001C4BA9 /* RightSwipeTransition.m in Sources */,
 				CF44E13D1E6598B2001C4BA9 /* PresentVC.m in Sources */,
 				CF353DC01E1357D80094632B /* AppDelegate.m in Sources */,
+				CF6009421E963AC500674099 /* PushedViewController.m in Sources */,
 				CF44E1441E666C3E001C4BA9 /* CatalogTableViewController.m in Sources */,
 				CF353E051E13BDA40094632B /* PopPhotoViewControllerInteractive.m in Sources */,
 				CF353E131E14AAEE0094632B /* CustomNavigationAnimationController.m in Sources */,
 				CF353DF01E13584E0094632B /* PopAnimator.m in Sources */,
 				CF353DFF1E13A4530094632B /* PopPhotoViewControllerTransition.m in Sources */,
+				CF6009451E963BDE00674099 /* TestPushedViewController.m in Sources */,
 				CF44E13A1E6596B5001C4BA9 /* PresentationController.m in Sources */,
 				CF353DBD1E1357D80094632B /* main.m in Sources */,
 			);

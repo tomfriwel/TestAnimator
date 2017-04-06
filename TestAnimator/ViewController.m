@@ -12,6 +12,7 @@
 #import "PopPhotoViewControllerTransition.h"
 #import "CustomInteractionController.h"
 #import "CustomNavigationAnimationController.h"
+#import "TestPushedViewController.h"
 
 @interface ViewController ()<UIViewControllerTransitioningDelegate, UINavigationControllerDelegate, CustomInteractionControllerDelegate>
 
@@ -41,6 +42,10 @@
 }
 - (IBAction)back:(id)sender {
     [self dismissViewControllerAnimated:YES completion:nil];
+}
+- (IBAction)showAction:(id)sender {
+    TestPushedViewController *vc = [[TestPushedViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)testAction:(id)sender {

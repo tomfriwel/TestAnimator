@@ -7,6 +7,7 @@
 //
 
 #import "CustomNavigationAnimationController.h"
+#import "PushedViewController.h"
 
 @implementation CustomNavigationAnimationController
 
@@ -40,11 +41,17 @@
     
     toView.layer.transform = viewToTransform;
     [containerView addSubview: toView];
-    
+//    if ([toViewController isKindOfClass:[PushedViewController class]]) {
+//        PushedViewController *vc = (PushedViewController *)toViewController;
+//        [vc.textField becomeFirstResponder];
+//    }
     [UIView animateWithDuration:[self transitionDuration:transitionContext] animations:^{
         containerView.transform = CGAffineTransformMakeTranslation(0, -direction * containerView.frame.size.height);
         fromView.layer.transform = viewFromTransform;
         toView.layer.transform = CATransform3DMakeTranslation(0, direction * containerView.frame.size.height, 0);//CATransform3DIdentity;
+        
+        
+        
     } completion:^(BOOL finished) {
         containerView.transform =  CGAffineTransformIdentity;
         fromView.layer.transform = CATransform3DIdentity;
